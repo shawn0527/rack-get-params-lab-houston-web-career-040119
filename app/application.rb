@@ -18,6 +18,9 @@ class Application
       @resp.write "Path Not Found"
     end
 
+    if @@cart = []
+      resp.write "Your cart is empty"
+
     @resp.finish
   end
 
