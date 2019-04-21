@@ -29,8 +29,11 @@ class Application
     end
   end
 
-  def add(/item/)
-    if @@items.include?(/item/)
+  def add(item)
+    if @@items.include?(item)
+      @@cart << item
+      resp.write "added #{item}"
+      
 
   def cart
     if @@cart = []
