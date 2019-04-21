@@ -30,7 +30,7 @@ class Application
   end
 
   def add(/item/)
-    if @@item.include?(/item/)
+    if @@items.include?(/item/)
 
   def cart
     if @@cart = []
