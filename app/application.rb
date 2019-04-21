@@ -33,7 +33,7 @@ class Application
     if @@items.include?(item)
       @@cart << item
       resp.write "added #{item}"
-      
+
 
   def cart
     if @@cart = []
