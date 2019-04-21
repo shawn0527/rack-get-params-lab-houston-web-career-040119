@@ -28,24 +28,4 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
-
-  def add(item)
-    if @@items.include?(item)
-      @@cart << item
-      @resp.write "added #{item}"
-    else
-      @resp.write "We don't have that itme"
-    end
-  end
-
-
-  def cart
-    if @@cart = []
-      @resp.write "Your cart is empty"
-    else
-      @@cart.each do |item|
-        @resp.write "#{item}\n"
-      end
-    end
-  end
 end
