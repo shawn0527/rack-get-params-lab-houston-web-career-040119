@@ -1,3 +1,4 @@
+require 'pry'
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
@@ -48,4 +49,6 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+
+  binding.pry
 end
