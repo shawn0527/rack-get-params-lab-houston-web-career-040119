@@ -33,7 +33,6 @@ class Application
     else
       resp.write "We don't have that item!"
     end
-  else
 
     elsif req.path.match(/cart/)
       if @@cart = []
